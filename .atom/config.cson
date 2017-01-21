@@ -1,0 +1,104 @@
+"*":
+  "activate-power-mode":
+    comboMode: {}
+    particles:
+      enabled: false
+    screenShake:
+      enabled: false
+  "atom-beautify":
+    _analyticsUserId: "62a488d6-809a-48ef-a940-067997877f75"
+    general:
+      _analyticsUserId: "0b5d5bff-5a2d-42bb-88c3-9a48e7b7fe82"
+  core:
+    disabledPackages: [
+      "linter-stylelint"
+      "linter-pug-lint"
+      "linter-pug"
+      "processing"
+      "processing-atom"
+      "processing-autocomplete"
+      "processing-language"
+      "language-babel"
+      "slack-chat"
+      "terminal-plus"
+      "activate-power-mode"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "dist"
+      ".DS_Store"
+      "node_modules"
+      ".DS_Store"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "isotope-ui"
+      "one-dark-syntax"
+    ]
+  editor:
+    fontFamily: "\"Fira Mono\", \"Office Code Pro\""
+    fontSize: 18
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+  emmet: {}
+  "exception-reporting":
+    userId: "d5d68075-6b1a-4483-5fc1-fdc78fd96b0f"
+  hyperclick:
+    darwinTriggerKeys: "altKey"
+  ignoredNames: [
+    ".git"
+    ".svn"
+    ".DS_Store"
+    "*.jpg"
+    "*.png"
+    "app"
+    "vendor"
+    ".sass-cache"
+    "*.css"
+    "dist"
+  ]
+  "isotope-ui":
+    fontFamily: "Fira Sans"
+  "language-babel":
+    autoIndentJSX: true
+  linter:
+    errorPanelHeight: 22
+  "linter-eslint":
+    eslintrcPath: "/usr/local/bin/eslint"
+  "merge-conflicts": {}
+  "one-dark-ui": {}
+  pigments:
+    markerType: "dot"
+  processing:
+    "processing-executable": "/Users/mike/Documents/Processing/tools/processing-java"
+  "processing-atom":
+    "processing-executable": "/Users/mike/Documents/Processing/tools/processing-java"
+  "slack-chat":
+    api_key: "2177279484.18807563239"
+    api_secret: "0f825949c9045c37b5a3c5c09ed92db6"
+    api_token: "xoxp-2177279484-13700916423-18803929301-4d87b9bd03"
+    notifications: false
+  "todo-show":
+    sortAscending: false
+    sortBy: "File"
+  welcome:
+    showOnStartup: false
+".babel.regexp.source":
+  editor:
+    tabLength: 4
+".css.source.styled":
+  editor:
+    tabLength: 4
+".js.jsx.source":
+  editor:
+    tabLength: 4
+".languagebabel.ttlextension":
+  editor:
+    tabLength: 4

@@ -55,7 +55,7 @@ ZSH_THEME="amuse"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -111,4 +111,5 @@ nvm use node
 # Example aliases
 alias zshconfig="$EDITOR ~/.zshrc"
 alias reload="source ~/.zshrc"
+alias applyOsxDefaults="source osxdefaults.sh"
 # alias ohmyzsh="mate ~/.oh-my-zsh"

@@ -1,6 +1,5 @@
 # dotfiles
-
-forked from: https://github.com/Andersos/dotfiles
+(forked from: https://github.com/Andersos/dotfiles)
 
 Install [Homebrew](http://brew.sh/)
 ```bash

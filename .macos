@@ -1,0 +1,34 @@
+## macos SETUP
+
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
+# Trackpad: enable tap to click for this user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+# Finder: show hidden files by default
+defaults write com.apple.finder AppleShowAllFiles YES
+
+# Finder: show all file extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Finder: restart finder
+killall Finder
+
+# Dock: Turn on hiding
+defaults write com.apple.Dock autohide -bool TRUE
+
+# Dock: Remove auto hide delay
+defaults write com.apple.Dock autohide-delay -float 0
+
+# Dock: Display only active application in the Mac OS X Dock
+defaults write com.apple.dock static-only -bool TRUE
+
+# Dock: Display recently used Applications
+defaults write com.apple.dock persistent-others -array-add '{"tile-data" = {"list-type" = 1;}; "tile-type" = "recents-tile";}';
+
+# Dock: restart dock
+killall Dock

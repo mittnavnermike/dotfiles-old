@@ -73,6 +73,8 @@ brew cask install flux
 brew cask install magnet
 brew cask install backblaze
 brew cask install appcleaner
+brew cask install transmission
+brew cask install handbrake
 
 echo "cask done"
 echo "Complete. Have a nice day!"

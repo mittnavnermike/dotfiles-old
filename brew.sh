@@ -76,6 +76,7 @@ brew cask install appcleaner
 brew cask install transmission
 brew cask install handbrake
 brew cask install audio-hijack
+brew cask install steam
 
 echo "cask done"
 echo "Complete. Have a nice day!"

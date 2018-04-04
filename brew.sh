@@ -33,8 +33,8 @@ brew install dark-mode
 brew install git
 brew install git-lfs
 brew install rename
+brew install nvm
 brew install shellcheck
-brew install node
 brew install yarn
 brew install z
 
@@ -61,7 +61,7 @@ brew cask install iterm2
 echo "Installing design tools"
 brew cask install sketch
 brew cask install adobe-creative-cloud
-brew cask install fontexplorer-x-pro
+brew cask install rightfont
 
 echo "Installing osx tools"
 brew cask install vlc
@@ -77,6 +77,7 @@ brew cask install transmission
 brew cask install handbrake
 brew cask install audio-hijack
 brew cask install steam
+brew cask install notion
 
 echo "cask done"
 echo "Complete. Have a nice day!"

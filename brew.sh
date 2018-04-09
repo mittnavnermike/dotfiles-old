@@ -49,14 +49,10 @@ npm i react-native -g
 # Cask
 echo "cask start"
 
-brew cask install 1password
-brew cask install spotify
-brew cask install slack
-brew cask install cyberduck
-
 echo "Installing code tools"
 brew cask install visual-studio-code
 brew cask install iterm2
+brew cask install cyberduck
 
 echo "Installing design tools"
 brew cask install sketch
@@ -64,14 +60,14 @@ brew cask install adobe-creative-cloud
 brew cask install rightfont
 
 echo "Installing osx tools"
+brew cask install 1password
+brew cask install spotify
+brew cask install slack
 brew cask install vlc
-brew cask install beamer
 brew cask install licecap
 brew cask install audacity
 brew cask install alfred
-brew cask install flux
 brew cask install magnet
-brew cask install backblaze
 brew cask install appcleaner
 brew cask install transmission
 brew cask install handbrake

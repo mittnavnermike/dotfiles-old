@@ -1,0 +1,106 @@
+{
+	"name": "open-in-browser",
+	"displayName": "open in browser",
+	"description": "This allows you to open the current file in your default browser or application.",
+	"icon": "images/icon.png",
+	"version": "1.1.0",
+	"publisher": "techer",
+	"repository": "https://github.com/SudoKillMe/vscode-extensions-open-in-browser",
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"open",
+		"html",
+		"browser"
+	],
+	"activationEvents": [
+		"onCommand:extension.openInBrowser",
+		"onCommand:extension.openInBrowserFromMenu",
+		"onCommand:extension.openInSpecifyBrowser"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.openInBrowser",
+				"title": "Open In Default Browser"
+			},
+			{
+				"command": "extension.openInBrowserFromMenu",
+				"title": "Open In Default Browser"
+			},
+			{
+				"command": "extension.openInSpecifyBrowser",
+				"title": "Open In Other Browsers"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "plugin open-in-browser",
+			"properties": {
+				"open-in-browser.default": {
+					"type": "string",
+					"default": "",
+					"description": "Set default browser"
+				}
+			}
+		},
+		"keybindings": [
+			{
+				"command": "extension.openInBrowser",
+				"key": "Alt+B"
+			},
+			{
+				"command": "extension.openInSpecifyBrowser",
+				"key": "Alt+Shift+B"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"when": "resourceLangId == html",
+					"command": "extension.openInBrowserFromMenu",
+					"group": "open-in-browser"
+				},
+				{
+					"when": "resourceLangId == html",
+					"command": "extension.openInSpecifyBrowser",
+					"group": "open-in-browser"
+				}
+			],
+			"editor/context": [
+				{
+					"when": "resourceLangId == html",
+					"command": "extension.openInBrowser",
+					"group": "open-in-browser"
+				},
+				{
+					"when": "resourceLangId == html",
+					"command": "extension.openInSpecifyBrowser",
+					"group": "open-in-browser"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"eslint": "^3.6.0",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"__metadata": {
+		"id": "fef63133-dae3-40fb-b81d-6da7617b4b1e",
+		"publisherId": "48ab6153-4317-4c20-8150-3c6f6065e415",
+		"publisherDisplayName": "TechER"
+	}
+}

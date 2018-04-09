@@ -74,6 +74,7 @@ brew cask install handbrake
 brew cask install audio-hijack
 brew cask install steam
 brew cask install notion
+brew cask install dropbox
 
 echo "cask done"
 echo "Complete. Have a nice day!"

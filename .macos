@@ -18,6 +18,9 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 # Finder: restart finder
 killall Finder
 
+# Dark Mode
+sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
+
 # Dock: Turn on hiding
 defaults write com.apple.Dock autohide -bool TRUE
 
@@ -28,7 +31,7 @@ defaults write com.apple.Dock autohide-delay -float 0
 defaults write com.apple.dock static-only -bool TRUE
 
 # Dock: Display recently used Applications
-defaults write com.apple.dock persistent-others -array-add '{"tile-data" = {"list-type" = 1;}; "tile-type" = "recents-tile";}';
+# defaults write com.apple.dock persistent-others -array-add '{"tile-data" = {"list-type" = 1;}; "tile-type" = "recents-tile";}';
 
 # Dock: restart dock
 killall Dock

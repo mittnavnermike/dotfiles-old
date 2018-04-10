@@ -56,6 +56,7 @@ brew cask install cyberduck
 
 echo "Installing design tools"
 brew cask install sketch
+brew cask install sketchpacks
 brew cask install adobe-creative-cloud
 brew cask install rightfont
 

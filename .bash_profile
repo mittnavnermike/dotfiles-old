@@ -50,13 +50,9 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-# for nvm
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
-ssh-add -A
+#ssh-add -A
 
 # Rupa z
 # Move next only if `homebrew` is installed
@@ -64,3 +60,11 @@ if command -v brew >/dev/null 2>&1; then
 	# Load rupa's z if installed
 	[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 fi
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
+
+alias ls="ls -G"
+export LSCOLORS="fxfxcxdxcxfgfdabagacad"

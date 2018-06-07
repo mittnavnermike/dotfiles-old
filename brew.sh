@@ -53,6 +53,8 @@ echo "Installing code tools"
 brew cask install visual-studio-code
 brew cask install iterm2
 brew cask install cyberduck
+brew cask install hyper
+brew cask install postman
 
 echo "Installing design tools"
 brew cask install sketch
